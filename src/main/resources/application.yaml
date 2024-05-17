@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/BookApp
+    username: postgres
+    password: p@ssword
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+  main:
+    allow-circular-references: true
+jwt:
+  secret: 2508726f5ca7ea4270c4e711d5455fec4c8a308a9a47aacb48f909fd9bb483da
+  lifeTime: 30m
